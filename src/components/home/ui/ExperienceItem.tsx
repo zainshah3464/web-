@@ -2,10 +2,15 @@ import type { IExperienceItem } from "@/types";
 import Column from "@/components/core/Column";
 import BulletedText from "@/components/common/bulleted-text";
 
-const ExperienceItem = ({ data }: { data: IExperienceItem }) => {
+interface ExperienceItemProps {
+  data: IExperienceItem;
+  className?: string; // Optional className prop
+}
+
+const ExperienceItem: React.FC<ExperienceItemProps> = ({ data, className }) => {
   return (
-    <Column classNames="justify-between w-full h-full gap-2">
-      <Column classNames="justify-start">
+    <Column className={`justify-between w-full h-full gap-2 ${className || ""}`}>
+      <Column className="justify-start">
         <p className="text-lg/6 font-semibold">{data.designation}</p>
 
         <p className="text-[var(--textColorLight)] text-base/6 font-medium">

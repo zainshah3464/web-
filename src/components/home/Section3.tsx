@@ -13,7 +13,7 @@ const HomeSection3 = ({ id }: { id: string }) => {
     >
       <ConstrainedBox classNames="p-6 py-16 rounded-xl shadow-2xl bg-[#1a1a1a]">
         {/* Section Title */}
-        <SectionTitle classNames="text-3xl font-extrabold text-[#f5f5f5] tracking-wide mb-8">
+        <SectionTitle className="text-3xl font-extrabold text-[#f5f5f5] tracking-wide mb-8">
           Experiences
         </SectionTitle>
 
@@ -25,7 +25,7 @@ const HomeSection3 = ({ id }: { id: string }) => {
               <ExperienceItem
                 key={`experience-${i}`}
                 data={exp}
-                classNames="bg-[#1f1f1f] p-6 rounded-lg shadow-md mb-8 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#333333]"
+                className="bg-[#1f1f1f] p-6 rounded-lg shadow-md mb-8 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#333333]"
               />
             ),
           }))}
