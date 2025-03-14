@@ -8,10 +8,10 @@ import experiences from "@/data/experiences";
 const HomeSection3 = ({ id }: { id: string }) => {
   return (
     <ResponsiveBox
-      classNames="bg-gradient-to-r from-[#f2f2f2] to-[#e0e0e0] min-h-screen flex items-center justify-center px-6 py-16"
+      className="bg-gradient-to-r from-[#f2f2f2] to-[#e0e0e0] min-h-screen flex items-center justify-center px-6 py-16"
       id={id}
     >
-      <ConstrainedBox classNames="p-6 py-16 rounded-xl shadow-2xl bg-[#1a1a1a]">
+      <ConstrainedBox className="p-6 py-16 rounded-xl shadow-2xl bg-[#1a1a1a]">
         {/* Section Title */}
         <SectionTitle className="text-3xl font-extrabold text-[#f5f5f5] tracking-wide mb-8">
           Experiences
